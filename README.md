@@ -1,6 +1,6 @@
 # Diyabet Tahmin Modeli
 
-Bu proje, Pima Indians Diabetes veri setini kullanarak diyabet hastalığını tahmin etmeyi amaçlamaktadır. Proje kapsamında çeşitli makine öğrenmesi modelleri denenmiş ve en iyi sonuçları veren model seçilmiştir.
+Bu proje, [health test by blood dataset](https://www.kaggle.com/datasets/simaanjali/diabetes-classification-dataset) veri setini kullanarak diyabet hastalığını tahmin etmeyi amaçlamaktadır. Proje kapsamında çeşitli makine öğrenmesi modelleri denenmiş ve en iyi sonuçları veren model seçilmiştir.
 
 ## Kurulum
 
