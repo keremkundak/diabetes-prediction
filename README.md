@@ -1,6 +1,6 @@
 # Diabetes Prediction Model
 
-This project aims to predict diabetes using the Pima Indians Diabetes dataset. Various machine learning models were tested within the scope of the project, and the model that gave the best results was selected.
+This project aims to predict diabetes using the [health test by blood dataset](https://www.kaggle.com/datasets/simaanjali/diabetes-classification-dataset). Various machine learning models were tested within the scope of the project, and the model that gave the best results was selected.
 
 ## Installation
 
