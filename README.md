@@ -61,3 +61,29 @@ curl -X POST -H "Content-Type: application/json" -d '{
   "BUN": 25.0
 }' http://127.0.0.1:8000/predict
 ```
+
+## Project Structure
+
+```
+/diabetes-prediction/
+├── .gitignore
+├── api.py
+├── app.py
+├── README.md
+├── requirements.txt
+├── data/
+│   ├── processed/
+│   └── raw/
+├── models/
+├── reports/
+└── src/
+    ├── data_preprocessing.py
+    ├── evaluate.py
+    ├── feature_engineering.py
+    ├── train.py
+    └── utils.py
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
