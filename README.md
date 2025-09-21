@@ -1,36 +1,36 @@
-# Diyabet Tahmin Modeli
+# Diabetes Prediction Model
 
-Bu proje, Pima Indians Diabetes veri setini kullanarak diyabet hastalığını tahmin etmeyi amaçlamaktadır. Proje kapsamında çeşitli makine öğrenmesi modelleri denenmiş ve en iyi sonuçları veren model seçilmiştir.
+This project aims to predict diabetes using the Pima Indians Diabetes dataset. Various machine learning models were tested within the scope of the project, and the model that gave the best results was selected.
 
-## Kurulum
+## Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Kullanım
+## Usage
 
-1.  **Veri setini `data/raw/` klasörüne indirin.**
+1.  **Download the dataset to the `data/raw/` folder.**
 
-2.  **Modelleri eğitmek ve deneyleri MLflow'a loglamak için:**
+2.  **To train the models and log experiments to MLflow:**
 
     ```bash
     python src/train.py
     ```
 
-## Raporlar ve Deney Takibi (MLflow)
+## Reports and Experiment Tracking (MLflow)
 
-Deney sonuçlarını, metrikleri ve modelleri görmek için MLflow UI'ı başlatın:
+To see the experiment results, metrics, and models, start the MLflow UI:
 
 ```bash
 mlflow ui
 ```
 
-Tarayıcınızda `http://127.0.0.1:5000` adresini açın.
+Open `http://127.0.0.1:5000` in your browser.
 
-## Streamlit Web Arayüzü
+## Streamlit Web Interface
 
-İnteraktif tahminler yapmak için Streamlit uygulamasını çalıştırın:
+To make interactive predictions, run the Streamlit application:
 
 ```bash
 streamlit run app.py
@@ -38,20 +38,20 @@ streamlit run app.py
 
 ## FastAPI
 
-Programatik tahminler için FastAPI uygulamasını çalıştırın:
+To make programmatic predictions, run the FastAPI application:
 
 ```bash
 uvicorn api:app --reload
 ```
 
-API dokümantasyonuna `http://127.0.0.1:8000/docs` adresinden ulaşabilirsiniz.
+You can access the API documentation at `http://1227.0.0.1:8000/docs`.
 
-Örnek bir `curl` isteği:
+An example `curl` request:
 
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{
   "Age": 55,
-  "Gender": "Erkek",
+  "Gender": "Male",
   "BMI": 30.0,
   "Chol": 250.0,
   "TG": 180.0,
